@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy a Home | Sauber Real Estate — Minnesota MLS Search</title>
+  <meta name="description" content="Search homes for sale across Minnesota's south metro. Real-time MLS listings, interactive map search, and expert guidance from John Sauber.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Sauber Real Estate"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buy.html" class="active">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="communities.html">Communities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <a href="tel:9526078913" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (952) 607-8913
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Buy</span>
+      </div>
+      <h1>Find Your Next Home</h1>
+      <p>Search thousands of homes across Minnesota's south metro — powered by real-time MLS data updated every 15 minutes.</p>
+    </div>
+  </section>
+
+  <!-- IDX Search Section -->
+  <section class="section-padding" id="idx-search">
+    <div class="container">
+      <!-- Advanced Search Bar -->
+      <form class="search-bar" id="propertySearch" style="margin-bottom: 40px;">
+        <div class="search-field">
+          <label>Location</label>
+          <input type="text" placeholder="City, ZIP, or Address...">
+        </div>
+        <div class="search-field">
+          <label>Price Range</label>
+          <select>
+            <option value="">Any Price</option>
+            <option>Under $250K</option>
+            <option>$250K - $400K</option>
+            <option>$400K - $600K</option>
+            <option>$600K - $800K</option>
+            <option>$800K - $1M</option>
+            <option>$1M+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Beds</label>
+          <select>
+            <option value="">Any</option>
+            <option>1+</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+            <option>5+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Baths</label>
+          <select>
+            <option value="">Any</option>
+            <option>1+</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Type</label>
+          <select>
+            <option value="">All Types</option>
+            <option>Single Family</option>
+            <option>Townhome</option>
+            <option>Condo</option>
+            <option>Multi-Family</option>
+            <option>Land / Lots</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+
+      <!-- IDX Integration Container -->
+      <div class="idx-container">
+        <div class="idx-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            <path d="M8 11h6"/><path d="M11 8v6"/>
+          </svg>
+          <h3>IDX Property Search</h3>
+          <p>This is where your IDX/MLS property search will appear. Connect your IDX provider to display live property listings from the Regional MLS of Minnesota.</p>
+
+          <div style="text-align:left; max-width:500px; margin:24px auto 0; background:var(--color-warm-beige); padding:24px; border-radius:var(--radius-sm);">
+            <p style="font-weight:600; font-size:0.88rem; margin-bottom:12px;">Supported IDX Providers:</p>
+            <ul style="font-size:0.85rem; color:var(--color-text-light); list-style:disc; padding-left:20px; line-height:2;">
+              <li><strong>IDX Broker</strong> — <code>&lt;script src="idxbroker.js"&gt;</code></li>
+              <li><strong>Showcase IDX</strong> — WordPress plugin or embed</li>
+              <li><strong>iHomeFinder</strong> — Widget or API integration</li>
+              <li><strong>MLS Aligned (RESO Web API)</strong> — Custom feed</li>
+            </ul>
+            <p style="font-size:0.8rem; color:var(--color-text-light); margin-top:12px;">Place your IDX embed code or script tag in this container.</p>
+          </div>
+
+          <code style="margin-top:20px;">&lt;!-- IDX_EMBED_CODE_HERE --&gt;</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Search Section -->
+  <section class="section-padding bg-beige" id="map-search">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Interactive Map</span>
+        <h2>Search by Map</h2>
+        <p>Draw a search area on the map to find homes in your preferred neighborhood.</p>
+      </div>
+
+      <!-- IDX Map Search Integration Point -->
+      <div class="idx-container" style="min-height: 500px;">
+        <div class="idx-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <h3>Interactive Map Search</h3>
+          <p>Your IDX provider's interactive map search will be embedded here. Supports draw-to-search, radius search, and neighborhood boundaries.</p>
+          <code>&lt;!-- IDX_MAP_WIDGET_HERE --&gt;</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buying Process -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Your Buying Journey</span>
+        <h2>How Buying a Home Works</h2>
+        <p>I'll guide you through every step of the process with clear communication and expert advice.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <h3>Get Pre-Approved</h3>
+          <p>Connect with a trusted lender to understand your budget and strengthen your offer.</p>
+        </div>
+        <div class="process-step">
+          <h3>Search & Tour</h3>
+          <p>I'll set up custom searches and schedule tours that match your family's needs and timeline.</p>
+        </div>
+        <div class="process-step">
+          <h3>Make an Offer</h3>
+          <p>I'll craft a competitive offer and negotiate on your behalf to get you the best deal possible.</p>
+        </div>
+        <div class="process-step">
+          <h3>Close & Celebrate</h3>
+          <p>I'll manage inspections, appraisals, and paperwork so you can focus on the excitement of your new home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First-Time Buyer CTA -->
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="label">First-Time Buyers</span>
+          <h2>Buying Your First Home?</h2>
+          <p>I know it can feel overwhelming. That's why I take extra time with first-time buyers to explain every step, answer every question, and make sure you feel confident in your decision.</p>
+          <p>From understanding Minnesota's first-time buyer programs to navigating inspections and closing costs — I've got your back.</p>
+          <div style="margin-top: 24px;">
+            <a href="contact.html" class="btn btn-primary">Let's Talk About Your Goals</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/john-sauber.jpg" alt="John Sauber — First Time Buyer Expert" loading="lazy">
+          <div class="about-image-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Common Questions</span>
+        <h2>Buyer FAQs</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How much do I need for a down payment?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Down payments vary by loan type. Conventional loans typically require 3-20%, FHA loans as low as 3.5%, and VA/USDA loans may require 0% down. Minnesota also has first-time buyer assistance programs that can help with down payment and closing costs. I can connect you with trusted lenders who specialize in these programs.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take to buy a home in Minnesota?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>The typical timeline from offer acceptance to closing is 30-45 days. However, getting pre-approved and finding the right home can vary. In the current market, well-prepared buyers often find homes within 2-8 weeks of starting their search. Being pre-approved before you start looking puts you in the strongest position.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a real estate agent to buy a home?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>While not legally required, having a buyer's agent is one of the smartest moves you can make. I provide access to the full MLS, negotiate on your behalf, coordinate inspections and appraisals, and guide you through the paperwork — all at no cost to you as the buyer in most transactions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are the best neighborhoods for families?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Minnesota's south metro has incredible family-friendly communities. Apple Valley, Lakeville, and Eagan consistently rank among the best for schools, parks, and safety. For more space and a rural feel, Farmington and Rosemount offer great value. I'll help match your priorities — schools, commute, lifestyle — to the perfect neighborhood.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Let's Find Your Dream Home</h2>
+      <p>I'll set up a personalized home search and send you new listings the moment they hit the market.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Start Your Search</a>
+        <a href="tel:9526078913" class="btn btn-outline-white">Call (952) 607-8913</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Sauber Real Estate">
+          <p>Helping Minnesota families find home since day one. Honest guidance, deep local knowledge, and a commitment to your success.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="buy.html">Search Homes</a></li>
+            <li><a href="sell.html">Sell Your Home</a></li>
+            <li><a href="sell.html#valuation">Home Valuation</a></li>
+            <li><a href="communities.html">Communities</a></li>
+            <li><a href="about.html">About John</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Communities</h4>
+          <ul>
+            <li><a href="communities.html#apple-valley">Apple Valley</a></li>
+            <li><a href="communities.html#lakeville">Lakeville</a></li>
+            <li><a href="communities.html#eagan">Eagan</a></li>
+            <li><a href="communities.html#burnsville">Burnsville</a></li>
+            <li><a href="communities.html#prior-lake">Prior Lake</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>7300 147th St W, Ste. 402<br>Apple Valley, MN 55124</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(952) 607-8913</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>john@sauberrealestate.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sauber Real Estate, Realty Group LLC. All rights reserved.</p>
+        <p class="footer-mls-disclaimer">Listing data courtesy of Regional Multiple Listing Service of Minnesota, Inc. IDX information is provided exclusively for consumers' personal, non-commercial use.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

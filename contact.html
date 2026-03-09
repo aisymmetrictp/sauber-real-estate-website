@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact John Sauber | Sauber Real Estate — Apple Valley, MN</title>
+  <meta name="description" content="Get in touch with John Sauber for all your Minnesota real estate needs. Office in Apple Valley. Call (952) 607-8913.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Sauber Real Estate"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="communities.html">Communities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <a href="tel:9526078913" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (952) 607-8913
+      </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+      <h1>Let's Connect</h1>
+      <p>Whether you're ready to buy, sell, or just have questions — I'm here to help. No pressure, ever.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="font-family:var(--font-heading); font-size:1.6rem; margin-bottom:8px;">Send Me a Message</h3>
+          <p style="color:var(--color-text-light); font-size:0.92rem; margin-bottom:28px;">I typically respond within a few hours during business days.</p>
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="first-name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="last-name" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="you@email.com" required>
+              </div>
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" name="phone" placeholder="(555) 123-4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>I'm Interested In</label>
+              <select name="interest">
+                <option value="buying">Buying a Home</option>
+                <option value="selling">Selling My Home</option>
+                <option value="both">Buying & Selling</option>
+                <option value="valuation">Home Valuation / CMA</option>
+                <option value="investing">Real Estate Investing</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Timeline</label>
+              <select name="timeline">
+                <option value="asap">Ready Now</option>
+                <option value="1-3months">Within 1-3 Months</option>
+                <option value="3-6months">Within 3-6 Months</option>
+                <option value="6-12months">Within 6-12 Months</option>
+                <option value="justlooking">Just Exploring</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Tell me a little about what you're looking for..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info-cards">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Call or Text</h4>
+              <p><a href="tel:9526078913" style="color:var(--color-accent); font-weight:600;">(952) 607-8913</a></p>
+              <p>Available 7 days a week</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:john@sauberrealestate.com" style="color:var(--color-accent); font-weight:600;">john@sauberrealestate.com</a></p>
+              <p>I reply within hours</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Office</h4>
+              <p>7300 147th St W, Suite 402</p>
+              <p>Apple Valley, MN 55124</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4>Availability</h4>
+              <p>Monday - Friday: 8am - 7pm</p>
+              <p>Saturday - Sunday: 9am - 5pm</p>
+              <p style="font-size:0.82rem; margin-top:4px;">Evenings by appointment</p>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.1!2d-93.2!3d44.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQzJzQ4LjAiTiA5M8KwMTInMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Sauber Real Estate Office Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Prefer to Talk?</h2>
+      <p>Sometimes a quick phone call is the best way to get started. I'm just a call away.</p>
+      <div class="cta-buttons">
+        <a href="tel:9526078913" class="btn btn-primary">Call (952) 607-8913</a>
+        <a href="sell.html#valuation" class="btn btn-outline-white">Get a Free Home Valuation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Sauber Real Estate">
+          <p>Helping Minnesota families find home since day one.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="buy.html">Search Homes</a></li><li><a href="sell.html">Sell Your Home</a></li><li><a href="sell.html#valuation">Home Valuation</a></li><li><a href="communities.html">Communities</a></li><li><a href="about.html">About John</a></li></ul></div>
+        <div class="footer-col"><h4>Communities</h4><ul><li><a href="communities.html#apple-valley">Apple Valley</a></li><li><a href="communities.html#lakeville">Lakeville</a></li><li><a href="communities.html#eagan">Eagan</a></li><li><a href="communities.html#burnsville">Burnsville</a></li><li><a href="communities.html#prior-lake">Prior Lake</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>7300 147th St W, Ste. 402<br>Apple Valley, MN 55124</span></div>
+          <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(952) 607-8913</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sauber Real Estate, Realty Group LLC. All rights reserved.</p>
+        <p class="footer-mls-disclaimer">Listing data courtesy of Regional Multiple Listing Service of Minnesota, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

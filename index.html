@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sauber Real Estate | Your Minnesota Home Expert</title>
+  <meta name="description" content="John Sauber — trusted Minnesota real estate agent helping families find their perfect home in Apple Valley, Lakeville, Burnsville, Eagan and beyond.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Sauber Real Estate">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="buy.html">Buy</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="buy.html">Search Homes</a></li>
+            <li><a href="buy.html#idx-search">Advanced Search</a></li>
+            <li><a href="buy.html#map-search">Map Search</a></li>
+            <li><a href="communities.html">Communities</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="sell.html">Sell</a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="sell.html">Selling Process</a></li>
+            <li><a href="sell.html#valuation">Home Valuation</a></li>
+            <li><a href="sell.html#market-report">Market Reports</a></li>
+          </ul>
+        </li>
+        <li><a href="communities.html">Communities</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <a href="tel:9526078913" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (952) 607-8913
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Find Your <span>Perfect Home</span> in Minnesota</h1>
+          <p>Whether you're a growing family searching for your first home or looking to upgrade to your dream property, I'll guide you every step of the way with honest advice and deep local expertise.</p>
+          <div class="hero-buttons">
+            <a href="buy.html" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Search Homes
+            </a>
+            <a href="sell.html#valuation" class="btn btn-outline-white">What's My Home Worth?</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>200+</h3>
+              <p>Families Served</p>
+            </div>
+            <div class="hero-stat">
+              <h3>$85M+</h3>
+              <p>In Home Sales</p>
+            </div>
+            <div class="hero-stat">
+              <h3>4.9★</h3>
+              <p>Client Rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="assets/images/john-sauber.jpg" alt="John Sauber - Your Minnesota Real Estate Expert">
+            <div class="hero-image-badge">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <h4>John Sauber</h4>
+                <p>Licensed MN Real Estate Agent</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROPERTY SEARCH BAR (IDX Integration Point) ========== -->
+  <section class="search-section">
+    <div class="container">
+      <form class="search-bar" id="propertySearch">
+        <div class="search-field">
+          <label>Location</label>
+          <select>
+            <option value="">All Areas</option>
+            <option>Apple Valley</option>
+            <option>Bloomington</option>
+            <option>Burnsville</option>
+            <option>Eagan</option>
+            <option>Farmington</option>
+            <option>Lakeville</option>
+            <option>Prior Lake</option>
+            <option>Rosemount</option>
+            <option>Savage</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Price Range</label>
+          <select>
+            <option value="">Any Price</option>
+            <option>$150K - $300K</option>
+            <option>$300K - $450K</option>
+            <option>$450K - $600K</option>
+            <option>$600K - $800K</option>
+            <option>$800K - $1M+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Bedrooms</label>
+          <select>
+            <option value="">Any</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+            <option>5+</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Property Type</label>
+          <select>
+            <option value="">All Types</option>
+            <option>Single Family</option>
+            <option>Townhome</option>
+            <option>Condo</option>
+            <option>Multi-Family</option>
+            <option>Land</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          Search
+        </button>
+      </form>
+      <div class="text-center">
+        <span class="idx-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Powered by MLS — Updated Every 15 Minutes
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED LISTINGS (IDX Integration Point) ========== -->
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Featured Properties</span>
+        <h2>Homes You'll Love</h2>
+        <p>Hand-picked listings from across the Twin Cities south metro — from cozy family starters to executive estates.</p>
+      </div>
+
+      <!-- IDX/MLS INTEGRATION NOTE:
+           Replace these static cards with your IDX provider's widget or API feed.
+           Supported providers: iHomeFinder, IDX Broker, Showcase IDX, ihomefinder
+           Add your IDX script/iframe in this section. -->
+
+      <div class="listings-grid">
+        <!-- Listing 1 -->
+        <div class="listing-card">
+          <div class="listing-image">
+            <div class="community-gradient"></div>
+            <span class="listing-badge">New Listing</span>
+            <p class="placeholder-text" style="position:absolute;color:white;z-index:1;">IDX Listing Photo</p>
+          </div>
+          <div class="listing-details">
+            <div class="listing-price">$389,900</div>
+            <div class="listing-address">1234 Maple Creek Dr, Apple Valley, MN</div>
+            <div class="listing-features">
+              <span class="listing-feature"><strong>4</strong> Beds</span>
+              <span class="listing-feature"><strong>3</strong> Baths</span>
+              <span class="listing-feature"><strong>2,450</strong> Sq Ft</span>
+            </div>
+            <p class="listing-mls-tag">MLS# 6312345 — Data courtesy RMLS of MN</p>
+          </div>
+        </div>
+
+        <!-- Listing 2 -->
+        <div class="listing-card">
+          <div class="listing-image">
+            <div class="community-gradient" style="background: linear-gradient(135deg, #2d5016, #1b6b93);"></div>
+            <span class="listing-badge">Price Reduced</span>
+            <p class="placeholder-text" style="position:absolute;color:white;z-index:1;">IDX Listing Photo</p>
+          </div>
+          <div class="listing-details">
+            <div class="listing-price">$525,000</div>
+            <div class="listing-address">5678 Lakewood Trl, Lakeville, MN</div>
+            <div class="listing-features">
+              <span class="listing-feature"><strong>5</strong> Beds</span>
+              <span class="listing-feature"><strong>4</strong> Baths</span>
+              <span class="listing-feature"><strong>3,800</strong> Sq Ft</span>
+            </div>
+            <p class="listing-mls-tag">MLS# 6312346 — Data courtesy RMLS of MN</p>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="listing-card">
+          <div class="listing-image">
+            <div class="community-gradient" style="background: linear-gradient(135deg, #1a1a2e, #b8860b);"></div>
+            <span class="listing-badge sold">Just Sold</span>
+            <p class="placeholder-text" style="position:absolute;color:white;z-index:1;">IDX Listing Photo</p>
+          </div>
+          <div class="listing-details">
+            <div class="listing-price">$749,000</div>
+            <div class="listing-address">910 Summit Ridge Ct, Eagan, MN</div>
+            <div class="listing-features">
+              <span class="listing-feature"><strong>5</strong> Beds</span>
+              <span class="listing-feature"><strong>5</strong> Baths</span>
+              <span class="listing-feature"><strong>4,200</strong> Sq Ft</span>
+            </div>
+            <p class="listing-mls-tag">MLS# 6312347 — Data courtesy RMLS of MN</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="buy.html" class="btn btn-outline">View All Listings →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">How I Can Help</span>
+        <h2>Real Estate Made Simple</h2>
+        <p>From first-time buyers to seasoned investors, I provide the guidance and market insight you need.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon red">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3>Find Your Home</h3>
+          <p>Search every listing on the MLS with real-time updates. From starter homes in Apple Valley to estate properties in Prior Lake.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Sell Your Property</h3>
+          <p>Strategic pricing, professional marketing, and skilled negotiation to get you top dollar. Free CMA valuations available.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>First-Time Buyers</h3>
+          <p>Buying your first home is a big deal. I'll walk you through every step — from pre-approval to closing day — with patience and care.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon gold">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Local Expertise</h3>
+          <p>Deep knowledge of every neighborhood south of the river — school ratings, commute times, market trends, and hidden gems.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon red">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Market Reports</h3>
+          <p>Stay informed with custom neighborhood market analysis. Know exactly what homes are selling for in your area.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+          </div>
+          <h3>Relocation Services</h3>
+          <p>Moving to Minnesota? I'll help you discover the perfect community for your family's lifestyle, schools, and budget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT JOHN ========== -->
+  <section class="section-padding bg-beige">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/images/john-sauber.jpg" alt="John Sauber — Sauber Real Estate" loading="lazy">
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-content">
+          <span class="label">Meet Your Agent</span>
+          <h2>John Sauber</h2>
+          <p>I believe finding your home should feel exciting, not stressful. As a Minnesota native and licensed real estate professional, I bring genuine care and deep market knowledge to every client relationship.</p>
+          <p>Whether you're a young family buying your first home in Apple Valley, upgrading to a lakefront property in Prior Lake, or downsizing after the kids leave the nest — I treat every transaction like it's my own.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon">✓</div>
+              <span>Family-First Approach</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">✓</div>
+              <span>Honest & Transparent</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">✓</div>
+              <span>Deep Local Knowledge</span>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">✓</div>
+              <span>Available When You Need Me</span>
+            </div>
+          </div>
+          <div style="margin-top: 32px;">
+            <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMMUNITIES ========== -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Explore Minnesota</span>
+        <h2>Communities I Serve</h2>
+        <p>From thriving suburbs to peaceful lakeside towns — find the neighborhood that fits your family.</p>
+      </div>
+      <div class="communities-grid">
+        <a href="communities.html#apple-valley" class="community-card">
+          <div class="community-gradient"></div>
+          <div class="community-overlay">
+            <h3>Apple Valley</h3>
+            <p>Top-rated schools & parks</p>
+          </div>
+        </a>
+        <a href="communities.html#lakeville" class="community-card">
+          <div class="community-gradient" style="background: linear-gradient(135deg, #2d5016, #1b6b93);"></div>
+          <div class="community-overlay">
+            <h3>Lakeville</h3>
+            <p>Growing families love it here</p>
+          </div>
+        </a>
+        <a href="communities.html#eagan" class="community-card">
+          <div class="community-gradient" style="background: linear-gradient(135deg, #1a1a2e, #c1272d);"></div>
+          <div class="community-overlay">
+            <h3>Eagan</h3>
+            <p>Urban convenience, suburban charm</p>
+          </div>
+        </a>
+        <a href="communities.html#prior-lake" class="community-card">
+          <div class="community-gradient" style="background: linear-gradient(135deg, #b8860b, #1a1a2e);"></div>
+          <div class="community-overlay">
+            <h3>Prior Lake</h3>
+            <p>Luxury lakefront living</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center" style="margin-top: 32px;">
+        <a href="communities.html" class="btn btn-outline">Explore All Communities →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section-padding bg-cream">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="label">Client Stories</span>
+        <h2>What Families Are Saying</h2>
+        <p>Nothing means more than helping a family find their perfect home.</p>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"John made our first home purchase feel effortless. He was patient with all of our questions and found us the perfect home in Apple Valley near great schools for our kids."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SK</div>
+            <div>
+              <div class="testimonial-name">Sarah & Kevin M.</div>
+              <div class="testimonial-location">Apple Valley, MN</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"We were relocating from out of state and John went above and beyond. He gave us virtual tours, detailed neighborhood info, and helped us close on an incredible home in Eagan."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DP</div>
+            <div>
+              <div class="testimonial-name">David & Priya R.</div>
+              <div class="testimonial-location">Eagan, MN</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"John sold our home in Lakeville in under a week — above asking price. His marketing strategy and negotiation skills are top-notch. Highly recommend for families."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JT</div>
+            <div>
+              <div class="testimonial-name">Jennifer & Tom W.</div>
+              <div class="testimonial-location">Lakeville, MN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Ready to Make Your Move?</h2>
+      <p>Whether buying or selling, let's have a no-pressure conversation about your real estate goals.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+        <a href="tel:9526078913" class="btn btn-outline-white">Call (952) 607-8913</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Sauber Real Estate">
+          <p>Helping Minnesota families find home since day one. Honest guidance, deep local knowledge, and a commitment to your success.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="buy.html">Search Homes</a></li>
+            <li><a href="sell.html">Sell Your Home</a></li>
+            <li><a href="sell.html#valuation">Home Valuation</a></li>
+            <li><a href="communities.html">Communities</a></li>
+            <li><a href="about.html">About John</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Communities</h4>
+          <ul>
+            <li><a href="communities.html#apple-valley">Apple Valley</a></li>
+            <li><a href="communities.html#lakeville">Lakeville</a></li>
+            <li><a href="communities.html#eagan">Eagan</a></li>
+            <li><a href="communities.html#burnsville">Burnsville</a></li>
+            <li><a href="communities.html#prior-lake">Prior Lake</a></li>
+            <li><a href="communities.html#rosemount">Rosemount</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>7300 147th St W, Ste. 402<br>Apple Valley, MN 55124</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(952) 607-8913</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>john@sauberrealestate.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sauber Real Estate, Realty Group LLC. All rights reserved.</p>
+        <p class="footer-mls-disclaimer">Listing data courtesy of Regional Multiple Listing Service of Minnesota, Inc. IDX information is provided exclusively for consumers' personal, non-commercial use. It may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
