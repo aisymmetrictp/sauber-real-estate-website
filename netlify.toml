@@ -1,12 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  conditions = {Role = ["admin"]}
-
 # Custom headers for security and performance
 [[headers]]
   for = "/*"
